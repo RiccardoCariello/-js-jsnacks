@@ -8,8 +8,11 @@ let input = 0;
 
 for(i = 0 ; i < 6 ; i++ ){
     input= prompt("Inserisci un numero");
-    if(!isNaN(input) && input % 2 == 1){
+    if(!isNaN(input)){
+        input = parseInt(input);
+        if(input % 2 == 1){
         numeri.push(input);
+        }
     }
 }
 
