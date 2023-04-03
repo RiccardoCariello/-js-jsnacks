@@ -1,11 +1,25 @@
-let input1 = prompt("Inserisci la prima parola");
-let input2 = prompt("Inserisci la seconda parola");
+/* In un array sono contenuti i nomi degli invitati alla festa del grande
+Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
+no alla festa.
+ */
 
-if(isNaN(input1) && isNaN(input2)){
 
-    if (input1.length > input2.length){
-        console.log(input1 + input2);
-    }else {
-        console.log(input2 + input1);
+const invitati = ["Jay Gatsby","Nick Carraway","Daisy Buchanan","Tom Buchanan","Myrtle Wilson","Meyer Wolfsheim","Jordan Baker","George Wilson","Henry C. Gatz","Trimalcione"];
+let check = false;
+let invitato = prompt("Come si chiama buonuomo?");
+
+invitato = invitato.toLowerCase();
+
+for(i = 0 ; i < 10 ; i++){
+    
+    if(invitati[i].toLowerCase() == invitato){
+        check = true;
     }
-}else console.log("gli input non sono validi");
+}
+
+if(check == true){
+    console.log("Prego buonuomo,può entrare, si goda la festa!");
+}else {
+    console.log("Lei non è nella lista degli invitati, mi dispiace ma non può entrare.");
+}
+
