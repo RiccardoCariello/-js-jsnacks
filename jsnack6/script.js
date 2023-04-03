@@ -1,11 +1,5 @@
-let input1 = prompt("Inserisci la prima parola");
-let input2 = prompt("Inserisci la seconda parola");
+/* Fate generare un numero random da 0 a 10 al computer, e chiedete
+all'utente di inserire un suo numero. Se il numero scelto dall'utente è
+uguale al numero del computer informate l'utente che ha vinto, altrimenti
+ha perso. */
 
-if(isNaN(input1) && isNaN(input2)){
-
-    if (input1.length > input2.length){
-        console.log(input1 + input2);
-    }else {
-        console.log(input2 + input1);
-    }
-}else console.log("gli input non sono validi");

@@ -1,11 +1,16 @@
-let input1 = prompt("Inserisci la prima parola");
-let input2 = prompt("Inserisci la seconda parola");
+/* Crea un array vuoto.
+Chiedi per 6 volte all’utente di inserire un numero,
+se è dispari inseriscilo nell’array. Stampa l'array alla fine. */
 
-if(isNaN(input1) && isNaN(input2)){
 
-    if (input1.length > input2.length){
-        console.log(input1 + input2);
-    }else {
-        console.log(input2 + input1);
+const numeri = [];
+let input = 0;
+
+for(i = 0 ; i < 6 ; i++ ){
+    input= prompt("Inserisci un numero");
+    if(!isNaN(input) && input % 2 == 1){
+        numeri.push(input);
     }
-}else console.log("gli input non sono validi");
+}
+
+console.log(numeri);
