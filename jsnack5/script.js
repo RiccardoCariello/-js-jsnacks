@@ -6,7 +6,7 @@ se è dispari inseriscilo nell’array. Stampa l'array alla fine. */
 const numeri = [];
 let input = 0;
 
-for(i = 0 ; i < 6 ; i++ ){
+for(let i = 0 ; i < 6 ; i++ ){
     input= prompt("Inserisci un numero");
     if(!isNaN(input)){
         input = parseInt(input);
